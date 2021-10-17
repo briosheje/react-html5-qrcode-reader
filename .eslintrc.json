@@ -25,7 +25,8 @@
         "import/extensions": 0,
         "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": ["error"],
-        "react/jsx-filename-extension": [ "warn", {"extensions": [".tsx"]}]
+        "react/jsx-filename-extension": [ "warn", {"extensions": [".tsx"]}],
+        "linebreak-style": 0
     },
     "settings": {
         "import/resolver": {
