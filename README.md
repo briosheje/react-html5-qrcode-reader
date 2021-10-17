@@ -21,6 +21,8 @@ If you have any suggestion about cleverer / better ways to include the raw
 html5-qrcode library, please make a PR, the best I came up with is to inject 
 in the head of the document the script pointing to the desired cdn.
 
+If you want to see a working example, navigate to the `example` folder.
+
 # Usage
 Like the [html5-qrcode library package](https://github.com/mebjas/html5-qrcode),
 you can either use the `Html5QrcodeScanner` or the `Html5Qrcode` approach.
