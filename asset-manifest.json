@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-html5-qrcode-reader/static/css/main.5739ad41.chunk.css",
+    "main.js": "/react-html5-qrcode-reader/static/js/main.bf466dd3.chunk.js",
+    "main.js.map": "/react-html5-qrcode-reader/static/js/main.bf466dd3.chunk.js.map",
+    "runtime-main.js": "/react-html5-qrcode-reader/static/js/runtime-main.16695b33.js",
+    "runtime-main.js.map": "/react-html5-qrcode-reader/static/js/runtime-main.16695b33.js.map",
+    "static/js/2.6aa9ad2d.chunk.js": "/react-html5-qrcode-reader/static/js/2.6aa9ad2d.chunk.js",
+    "static/js/2.6aa9ad2d.chunk.js.map": "/react-html5-qrcode-reader/static/js/2.6aa9ad2d.chunk.js.map",
+    "static/js/3.c00365da.chunk.js": "/react-html5-qrcode-reader/static/js/3.c00365da.chunk.js",
+    "static/js/3.c00365da.chunk.js.map": "/react-html5-qrcode-reader/static/js/3.c00365da.chunk.js.map",
+    "index.html": "/react-html5-qrcode-reader/index.html",
+    "static/css/main.5739ad41.chunk.css.map": "/react-html5-qrcode-reader/static/css/main.5739ad41.chunk.css.map",
+    "static/js/2.6aa9ad2d.chunk.js.LICENSE.txt": "/react-html5-qrcode-reader/static/js/2.6aa9ad2d.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/react-html5-qrcode-reader/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16695b33.js",
+    "static/js/2.6aa9ad2d.chunk.js",
+    "static/css/main.5739ad41.chunk.css",
+    "static/js/main.bf466dd3.chunk.js"
+  ]
+}
