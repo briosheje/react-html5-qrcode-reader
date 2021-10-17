@@ -1,0 +1,51 @@
+{
+  "name": "react-html5-qrcode-reader",
+  "version": "1.0.0",
+  "description": "A wrapper around html5-qrcode for react",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "scripts": {
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint src/* --fix",
+    "build": "npm run lint:fix && npm run build:esm && npm run build:commonjs",
+    "build:esm": "tsc",
+    "build:commonjs": "tsc --module commonjs --outDir lib/cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briosheje/react-html5-qrcode-reader.git"
+  },
+  "keywords": [
+    "react",
+    "html5",
+    "qrcode",
+    "reader"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "author": "Marco Iamonte <uaesbriosheje@gmail.com>",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/briosheje/react-html5-qrcode-reader/issues"
+  },
+  "homepage": "https://github.com/briosheje/react-html5-qrcode-reader#readme",
+  "devDependencies": {
+    "@types/react": "^17.0.30",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.4.4"
+  }
+}
