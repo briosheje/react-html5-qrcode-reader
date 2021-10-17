@@ -23,4 +23,48 @@ in the head of the document the script pointing to the desired cdn.
 
 # Usage
 Like the [html5-qrcode library package](https://github.com/mebjas/html5-qrcode),
-you can either use the ``
+you can either use the `Html5QrcodeScanner` or the `Html5Qrcode` approach.
+
+Either way, use the desired hook, like the example below:
+
+```tsx
+import { useHtml5QrCodeScanner } from 'react-html5-qrcode-reader';
+
+function YourComponent() {
+  const { Html5QrcodeScanner } = useHtml5QrCodeScanner(
+    'url to the .min.js (see examples).'
+  );
+
+  useEffect(() => {
+    if (Html5QrcodeScanner) {
+      // Creates anew instance of `HtmlQrcodeScanner` and renders the block.
+      let html5QrcodeScanner = new Html5QrcodeScanner(
+        "reader",
+        { fps: 10, qrbox: {width: 250, height: 250} },
+        /* verbose= */ false);
+      html5QrcodeScanner.render(
+        (data: any) => console.log('success ->', data), 
+        (err: any) => console.log('err ->', err)
+      );
+    }
+  }, [Html5QrcodeScanner]);
+
+  // beware: id must be the same as the first argument of Html5QrcodeScanner
+  return (
+    <div id='reader'></div>
+  );
+}
+
+
+```
+
+# Testing
+Please run the following to test the examples in the `example` folder if you
+clone the repository:
+
+- `npm link react`
+- `npm link react-dom`
+- Navigate to the example you want to test
+- `cd node_modules/react && npm link`
+- `cd node_modules/react-dom && npm link`
+
