@@ -10,7 +10,7 @@
     "lint:fix": "eslint src/* --fix",
     "build": "npm run lint:fix && npm run build:esm && npm run build:commonjs",
     "build:esm": "tsc",
-    "publish": "npm run build && npm login && npm publish",
+    "publish": "npm run build && npm publish",
     "build:commonjs": "tsc --module commonjs --outDir lib/cjs"
   },
   "repository": {
