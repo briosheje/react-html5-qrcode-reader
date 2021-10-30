@@ -1,5 +1,11 @@
 # react-html5-qrcode-reader
+[![npm version](https://badge.fury.io/js/react-html5-qrcode-reader.svg)](https://badge.fury.io/js/react-html5-qrcode-reader)
+
 A wrapper around html5-qrcode for react and SSR.
+
+Check out [the demo page](https://briosheje.github.io/react-html5-qrcode-reader/)
+for a live example. The source code of the example is available in the example
+folder (`example/my-app`).
 
 The current version only includes two hooks that automates the process of
 including the html5-qrcode package, next versions will include wrapper
