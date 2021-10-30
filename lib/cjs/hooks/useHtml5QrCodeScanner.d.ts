@@ -7,5 +7,6 @@
  */
 declare function useHtml5QrCodeScanner(html5QrCodeScriptUrl: string): {
     Html5QrcodeScanner: any;
+    loaded: boolean;
 };
 export default useHtml5QrCodeScanner;

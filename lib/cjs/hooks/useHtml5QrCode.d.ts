@@ -7,5 +7,6 @@
  */
 declare function useHtml5QrCode(html5QrCodeScriptUrl: string): {
     Html5Qrcode: any;
+    loaded: boolean;
 };
 export default useHtml5QrCode;

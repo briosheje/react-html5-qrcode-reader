@@ -10,19 +10,15 @@ import useHtml5QrCodeScript from './useHtml5QrCodeScript';
  * @returns
  */
 function useHtml5QrCode(html5QrCodeScriptUrl: string) {
-  const { loaded: html5QrcodeScriptLoaded } = useHtml5QrCodeScript(
+  const { loaded } = useHtml5QrCodeScript(
     html5QrCodeScriptUrl,
   );
 
-  const Html5Qrcode = useMemo(() => {
-    if (html5QrcodeScriptLoaded) {
-      return (window as any).Html5Qrcode;
-    }
+  const Html5Qrcode = useMemo(() => (window as any).Html5Qrcode, [
+    (window as any).Html5Qrcode,
+  ]);
 
-    return undefined;
-  }, [html5QrcodeScriptLoaded]);
-
-  return { Html5Qrcode };
+  return { Html5Qrcode, loaded };
 }
 
 export default useHtml5QrCode;

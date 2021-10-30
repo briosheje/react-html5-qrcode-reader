@@ -23,7 +23,15 @@ in the head of the document the script pointing to the desired cdn.
 
 If you want to see a working example, navigate to the `example` folder.
 
-# Usage
+# Available hooks
+
+To see real world example usages of the hooks below, check the Example Usage section.
+
+- `useAvailableDevices`: returns the available devices to use for scanning.
+- `useHtml5QrCode`: returns the `Html5Qrcode` instance of the html 5 qr code library..
+- `useHtml5QrCodeScanner`: returns the `Html5QrcodeScanner` instance of the html 5 qr code library.
+
+# Example Usage
 Like the [html5-qrcode library package](https://github.com/mebjas/html5-qrcode),
 you can either use the `Html5QrcodeScanner` or the `Html5Qrcode` approach.
 

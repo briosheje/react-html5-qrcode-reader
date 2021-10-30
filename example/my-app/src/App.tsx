@@ -1,11 +1,16 @@
 import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { useHtml5QrCodeScanner } from 'react-html5-qrcode-reader';
+import { useHtml5QrCodeScanner, useAvailableDevices } from 'react-html5-qrcode-reader';
+
+const html5QrCodeScannerFile = process.env.PUBLIC_URL + '/html5-qrcode.min.js'; // <-- this file is in /public.
 
 function App() {
   const { Html5QrcodeScanner } = useHtml5QrCodeScanner(
-    'html5-qrcode.min.js' // <-- this file is in /public.
+    html5QrCodeScannerFile
+  );
+  const { devices, error } = useAvailableDevices(
+    html5QrCodeScannerFile
   );
 
   useEffect(() => {
@@ -26,9 +31,20 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div id='reader'></div>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        {error && `Devices error: ${error}`}
+        {devices && (
+          <div>
+            <span>Available devices are:</span>
+            <ul>
+              {devices.map(v => (
+                <li>
+                  id: {v.id}<br />
+                  label: {v.label}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
         <a
           className="App-link"
           href="https://reactjs.org"

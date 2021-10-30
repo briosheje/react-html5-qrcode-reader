@@ -1,13 +1,13 @@
 {
   "name": "react-html5-qrcode-reader",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A wrapper around html5-qrcode for react",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
   "scripts": {
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint:fix": "eslint src/* --fix",
+    "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
     "build": "npm run lint:fix && npm run build:esm && npm run build:commonjs",
     "build:esm": "tsc",
     "publish": "npm run build && npm login && npm publish",
