@@ -24,8 +24,8 @@
     "reader"
   ],
   "peerDependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
   },
   "author": "Marco Iamonte <uaesbriosheje@gmail.com>",
   "license": "Apache 2.0",
